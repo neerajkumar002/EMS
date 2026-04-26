@@ -22,13 +22,18 @@ class Employee
         return $this->conn->query($query);
     }
 
+
+    //get employees list
+
+    public function getEmloyeesList()
+    {
+        $query = "SELECT * FROM employees";
+        return $this->conn->query($query);
+    }
+
     //delete employe
     public function deleteEmployee() {}
 
     //edit employee 
     public function editEmployee() {}
-
-    //
-
-
 }
